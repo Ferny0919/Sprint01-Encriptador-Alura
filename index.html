@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<!-- AUTOR: FERNANDO TORRES BERNHARD -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,21 @@
     <link rel="stylesheet" href="reset.css" type="text/css">
     <title>Encriptador</title>
 </head>
+
 <body>
+
     <header>
 
         <div class="encabezado">
 
             <img src="Imagenes/LOGO PERSONAL png.png" id="logo-personal" alt="Logo Personal">
-            
+
             <img src="Imagenes/logo png.png" alt="Logo Programa" id="logo">
-                      
-        </div>        
-        
+
+        </div>
+
     </header>
-    
+
     <main>
 
         <div class="principal">
@@ -28,35 +31,32 @@
             <form onsubmit="return false;">
 
                 <div class="encriptador-texto">
-                    <textarea cols="70" rows="10" id="input" placeholder="Ingrese el Texto que Desea Encriptar o Desencriptar" required></textarea>
+                    <textarea cols="70" rows="10" id="input"
+                        placeholder="Ingrese el Texto que Desea Encriptar o Desencriptar" required></textarea>
                 </div>
-                
+
                 <button id="encriptar" onclick="encryptText()">Encriptar!</button>
                 <button id="desencriptar" onclick="desencryptText()">Desencriptar!</button>
 
                 <div class="salida-texto">
                     <textarea cols="70" rows="10" id="output" placeholder="Ningun Texto Encriptado"></textarea>
-                    
+
                 </div>
 
                 <button id="copy-button">Copiar</button>
             </form>
-            
-            
-            
-        
 
+            <!-- Enlace hacia el documento JS -->
             <script src="main.js"></script>
-            
+
         </div>
-        
+
     </main>
 
     <footer>
         <img src="Imagenes/LOGO PERSONAL png.png">
     </footer>
 
-    
-
 </body>
+
 </html>

@@ -1,3 +1,5 @@
+/* ESTILO DEL HEADE*/
+
 header {
     background: linear-gradient(#58e7d4, #D8EDE0);
     position: relative;
@@ -16,6 +18,8 @@ header {
     text-align: center;
 }
 
+
+/* ESTILO DEL CUERPO */
 .principal {
     background: linear-gradient(#6d8a85, #3cd4bb);
     margin: 0 auto;
@@ -24,6 +28,8 @@ header {
     text-align: center;
 }
 
+
+/* ESTILO DEL BOTON COPIAR */
 #copy-button {
     --color: #560bad;
     cursor: pointer;
@@ -84,6 +90,8 @@ textarea {
     font-size: 20px;
 }
 
+
+/* ESTILO DEL BOTON ENCRIPTAR */
 #encriptar,
 #encriptar::after {
  cursor: pointer;
@@ -182,6 +190,8 @@ textarea {
  }
 }
 
+
+/* ESTILO DEL BOTON DESENCRIPTAR */
 #desencriptar,
 #desencriptar::after {
  cursor: pointer;
@@ -281,26 +291,11 @@ textarea {
  }
 }
 
+
+/* ESTILO DEL FOOTER */
 footer {
     margin-top: 50%;
     background: linear-gradient(#61bba6, #2f742d);
     margin-bottom: 0%;
     text-align: center;
-}
-
-@media screen and (max-width:412px){
-    .encabezado, img{
-        width: auto;
-        display: flex;
-        width: auto;
-    }
-
-
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
-        width: auto;
-    }
-
-    .lista-diferenciales, .imagenDiferencial {
-        width: 100%;
-    }
 }

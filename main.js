@@ -1,3 +1,5 @@
+
+/* FUNCION PARA ENCRIPTAR EL TEXTO */
 function encrypt(text) {
 
   if (/[^a-z\s]/g.test(text)) {
@@ -44,6 +46,7 @@ function encrypt(text) {
   return text; */
 }
 
+/* FUNCION PARA DESENCRIPTAR EL TEXTO */
 function desencrypt(text) {
   if (/[^a-z\s]/g.test(text)) {
     alert("Error: El texto de entrada solo debe contener minúsculas sin tildes ni caracteres especiales.");
@@ -102,19 +105,22 @@ function desencrypt(text) {
 }
 
 
-
+/* SE LLEVA A CABO EL PROCESO DE ENCRIPTACION */
 function encryptText() {
   var input = document.getElementById("input").value;
   var output = encrypt(input);
   document.getElementById("output").textContent = output;
 }
 
+/* SE LLEVA A CABO EL PROCESO DE DESENCRIPTACION */
 function desencryptText() {
   var input = document.getElementById("input").value;
   var output = desencrypt(input);
   document.getElementById("output").textContent = output;
 }
 
+
+/* PROCESO PARA COPIAR EL TEXTO DEL TEXTAREA */
 const textToCopy = document.querySelector('#output');
 const copyButton = document.querySelector('#copy-button');
 
