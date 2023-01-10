@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+
+        <div class="encabezado">
+
+            <img src="Imagenes/LOGO PERSONAL png.png" id="logo-personal" alt="Logo Personal">
+            
+            <img src="Imagenes/logo png.png" alt="Logo Programa" id="logo">
+                      
+        </div>        
+        
+    </header>
+    
+    <main>
+
+        <div class="principal">
+
+            <form onsubmit="return false;">
+
+                <div class="encriptador-texto">
+                    <textarea cols="70" rows="10" id="input" placeholder="Ingrese el Texto que Desea Encriptar o Desencriptar" required></textarea>
+                </div>
+                
+                <button id="encriptar" onclick="encryptText()">Encriptar!</button>
+                <button id="desencriptar" onclick="desencryptText()">Desencriptar!</button>
+
+                <div class="salida-texto">
+                    <textarea cols="70" rows="10" id="output" placeholder="Ningun Texto Encriptado"></textarea>
+                    
+                </div>
+
+                <button id="copy-button">Copiar</button>
+            </form>
+            
+            
+            
+        
+
+            <script src="main.js"></script>
+            
+        </div>
+        
+    </main>
+
+    <footer>
+        <img src="Imagenes/LOGO PERSONAL png.png">
+    </footer>
+
+    
+
+</body>
+</html>
